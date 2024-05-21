@@ -133,13 +133,11 @@ body::-webkit-scrollbar {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* text-align: end; */
   position: absolute;
   width: 189px;
   height: 59px;
   top: 25px;
   left: 1223px;
-  /* gap: 5px; */
   border: 1px 0px 0px 0px;
   opacity: 0px;
   background: #000000;
@@ -487,7 +485,7 @@ body::-webkit-scrollbar {
   height: 289px;
   top: 0;
   right: 0;
-  border-radius: 11px 0px 0px 0px;
+  border-radius: 11px;
   opacity: 0px;
   background-image: url(.//assets/imagination.png);
 }
@@ -938,4 +936,632 @@ h3 {
   border: #ffffff 1px solid;
   border-radius: 30px;
   gap: 2em;
+}
+
+/* --------------------- Mobile Version -------------- */
+
+@media screen and (max-width: 380px) {
+  body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .main {
+    width: 100%;
+  height: 1600px;
+  }
+
+  .content {
+    position: relative;
+    font-family: Aventa;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+  }
+
+  .navbar{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height: 80px;
+  }
+
+  .navbar .left .logo {
+    width: 67px;
+    height: 67px;
+    top: 18px;
+    left: 19px;
+    bottom: 0;
+    border-radius: 33.5px 0px 0px 0px;
+  }
+
+  .logo img{
+    height: 40px;
+    width: 40px;
+  }
+
+  .navbar .left .name {
+    top: 30px;
+    left: 70px;
+    bottom: 0;
+    font-family: Aventa;
+    font-size: 17px;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 20px;
+    color: #ffffff;
+  }
+
+  .navbar .center{
+    display: none;
+  }
+
+  .navbar .right{
+    position: relative;
+    top: -1em;
+    right: -1em;
+  }
+
+  .navbar .right .rectangle-one {
+    position: absolute;
+    width: 139px;
+    height: 49px;
+    top: 0px;
+    left: -12em;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    background: #000000;
+    border: 1px solid #ffffff;
+  }
+
+  .navbar .right .rectangle-two {
+    position: absolute;
+    width: 139px;
+    height: 49px;
+    top: -10px;
+    left: -11.5em;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    background: #000000;
+    border: 1px solid #ffffff;
+  }
+
+  .navbar .right .rectangle-two .red-dot {
+    cursor: pointer;
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    top: 21px;
+    left: 10px;
+    background: #ff0000;
+    z-index: 1;
+    border-radius: 50px;
+  }
+
+  .navbar .right .rectangle-two .text {
+    cursor: pointer;
+    width: 130px;
+    font-family: Aventa;
+    font-size: 11px;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    word-spacing: 3px;
+    z-index: 1;
+    color: #ffffff;
+  }
+
+  .line {
+    position: absolute;
+    width: 100%;
+    height: 0px;
+    top: 85px;
+    left: 1px;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    border: 1px solid #ffffff;
+  }
+
+  #hero-section-one {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 1600px;
+  }
+
+/* ---------------- Hero One left ----------- */
+
+
+#hero-section-one .hero-one-left{
+    margin-top: -7em;
+    position: relative;
+    width: 100%;
+    height: 600px;
+  }
+
+  .hero-one-left .men {
+    width: 205px;
+    height: 255px;
+    top: 151px;
+    left: 5em;
+    border-radius: 10px;
+    opacity: 0px;
+    border: #101010 8px solid;
+  }
+
+  .men img {
+    width: 190px;
+    height: 240px;
+    top: 15px;
+    opacity: 0px;
+    border-radius: 6px;
+  }
+ 
+  .hero-one-left .designer {
+    position: absolute;
+    width: 208px;
+    height: 86px;
+    top: 420px;
+    left: 3em;
+    font-family: "Poppins", sans-serif;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 45.55px;
+    text-align: left;
+  }
+
+  .designer h3{
+    font-weight: 500;
+  }
+
+  .hero-one-left .experience h1 {
+    position: absolute;
+    width: 79px;
+    height: 90px;
+    top: 520px;
+    left: 1.3em;
+    font-family: "Poppins", sans-serif;
+    font-size: 85px;
+    font-weight: 100;
+    line-height: 89.73px;
+    text-align: left;
+    color: #ffffff;
+  }
+
+  .hero-one-left .experience p {
+    position: absolute;
+    width: 56px;
+    height: 34px;
+    top: 555px;
+    left: 14em;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.34px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+
+  .hero-one-left .experience span {
+    position: absolute;
+    width: 74px;
+    height: 4px;
+    top: 540px;
+    left: 12em;
+    gap: 0px;
+    border-radius: 24px 0px 0px 0px;
+    opacity: 0px;
+    background: #ff0000;
+  }
+
+/* -------------------- Hero One Center -------------- */
+
+.border {
+  position: absolute;
+  width: 100%;
+  height: 500px;
+  top: 160px;
+  left: 0;
+  opacity: 0px;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  border-right: 0;
+  border-left: 0;
+}
+
+.hero-one-center {
+  width: 100%;
+  height: 650px;
+  margin-top: -55em;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content h1 {
+  text-transform: uppercase;
+  font-family: Poppins;
+  font-size: 2.6em;
+  font-weight: 400;
+  line-height: 0.8em;
+  letter-spacing: -0.03em;
+  text-align: center;
+  align-self: center;
+  color: #ffffff;
+}
+
+.content .volt p {
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26.5px;
+  text-align: center;
+}
+
+.content .brom img{
+  margin-top: 1em;
+  width: 300px;
+}
+
+.content .GSAP {
+  text-align: left;
+  margin-top: -21em;
+  font-size: 14px;
+  width: 280px;
+}
+
+.car img{
+  position: absolute;
+  width: 200px;
+  bottom: 0;
+  right: 7em;
+}
+
+.vector img{
+  position: absolute;
+  width: 80px;
+  bottom: 0;
+  left: -10em;
+}
+
+.hero-one-center .vector{
+  bottom: -0.8em;
+  right: 9em;
+}
+
+.hero-one-center .car {
+  bottom: -2em;
+  right: -6em;
+}
+
+/* ---------------- Hero One Right ----------- */
+
+.hero-one-right{
+  margin-top: -39em;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 400px;
+  position: relative;
+}
+
+.hero-one-right .sticker-1 img{
+  position: absolute;
+  width: 160px;
+  top: -3em;
+  left:2em;
+}
+
+.hero-one-right .sticker-2 img{
+  width: 180px;
+  position: absolute;
+  top: -10em;
+  left: 8em;
+}
+
+/* ------------------ Content Two Styling ------------------- */
+
+#content-2 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 1050px;
+  background-color: #ffffff;
+}
+
+#content-2 .item-1 {
+  margin-top: 2em;
+  position: relative;
+  width: 90%;
+}
+
+#content-2 .item-1 h1{
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.5em;
+}
+
+#content-2 .item-2 {
+  position: relative;
+  margin-top: 3em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+}
+
+.item-2 .group-1{
+  width: 100%;
+  height: 380px;
+  position: relative;
+  top: 4em;
+}
+
+.item-2 .group-1 .text{
+  font-size: 14px;
+}
+
+.item-2 .group-1 .anabolic img {
+  width: 350px;
+}
+
+.item-2 .group-2 {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.group-2 .imagination{
+  width: 364px;
+  height: 189px;
+}
+
+.group-2 .imagination-text{
+  gap: 10px;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+  
+.group-2 .imagination-text .text{
+  font-size: 14px;
+}
+
+.shape {
+  display: none;
+}
+
+/* ------------------ Content Three Styling ----------- */
+
+#content-3{
+  width: 100%;
+  height: 600px;
+}
+
+#content-3 .item-1 h3, .item-3 h3 {
+  font-size: 14px;
+}
+
+#content-3 .item-2 h1{
+  font-size: 22px;
+  line-height: 1.5em;
+
+}
+
+#content-3 .item-2 h1 img{
+  width: 22px;
+}
+
+#content-3 .item-2 .border-line{
+  width: 300px;
+}
+
+/* --------------- Content Four Styling ------------ */
+
+#content-4{
+  position: relative;
+  width: 100%;
+  height: 580px;
+  display: flex;
+  align-items: center;
+}
+
+#content-4 .group-1 {
+  margin-top: 1em;
+  width: 90%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#content-4 .group-1 h1{
+  font-size: 24px;
+}
+
+#content-4 .group-1 .text {
+  width: 80%;
+  top: 4em;
+  left: 0;
+  font-size: 18px;
+}
+
+#content-4 .group-1 img {
+  width: 100px;
+  position: absolute;
+  top: 5em;
+  left: 11.5em;
+}
+
+#content-4 .group-2{
+  position: relative;
+  width: 90%;
+}
+
+#content-4 .group-2 .text-1{
+  width: 55%;
+}
+
+#content-4 .group-2 .text-2{
+  width: 90%;
+  position: absolute;
+  top: 15em;
+  right: 0em;
+  font-family: Aventa;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 31.5px;
+}
+
+#content-4 .skelly-head{
+  top: 12em;
+  left: 13em;
+}
+
+#content-4 .skelly-head img{
+  width: 150px;
+}
+
+/* ----------------- Content Five Styling -------------- */
+
+#content-5{
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#content-5 .heading{
+  margin-top: 1em;
+}
+
+#content-5 .heading h1{
+  position: relative;
+  text-align: center;
+  font-size: 19px;
+}
+
+#content-5 .heading .border-line{
+  position: absolute;
+  width: 100%;
+  bottom: 0em;
+}
+
+#content-5 .heading h1 img{
+  width: 20px;
+}
+
+#content-5 .some-works .icons {
+  margin-top: 3em;
+  text-align: center;
+}
+
+#content-5 .cards {
+  width: 90%;
+}
+
+#content-5 .cards .image {
+  position: relative;
+  width: 460.35px;
+  height: 304.01px;
+  background: #d9d9d9;
+}
+
+#content-5 .cards .image-1 {
+  background-size: cover;
+  background-image: url(./assets/card-image-1.png);
+}
+
+#content-5 .cards .image-4 {
+  background-size: cover;
+  background-image: url(./assets/card-image-4.png);
+}
+
+#content-5 .work-together {
+  width: 100%;
+}
+
+#content-5 .work-together h1{
+  width: 100%;
+  position: relative;
+  font-size: 38px;
+}
+
+#content-5 .work-together h1 img {
+  width: 30px;
+  position: absolute;
+  top: 5px;
+  right: 3.1em;
+}
+
+#content-5 .footer {
+  margin-top: 4em;
+  position: relative;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-top: #d9d9d9 2px solid;
+}
+
+.footer .footer-left {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-left .button button {
+  padding: 0.8em 1em;
+  font-size: 16px;
+}
+
+.footer-center{
+  margin-top: -2em;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.footer-right .number{
+  font-size: 22px;
+}
+
+.footer-right .bubbles ul li{
+  margin: 0.7em;
+  font-size: 14px;
+  line-height: 5em;
+}
+
 }
